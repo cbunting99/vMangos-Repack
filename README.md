@@ -1,6 +1,5 @@
 ![VMRepack Logo](vmrepack.png)
 
-# Vanilla MaNGOS Repack
 This is a repack of the VMaNGOS core, which is an independent continuation of the Elysium / LightsHope 
 codebases, focused on delivering the most complete and accurate content progression system possible, 
 including support for the patch appropriate game clients.
