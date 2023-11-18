@@ -1,10 +1,26 @@
-[![vmangos CI build](https://github.com/vmangos/core/actions/workflows/vmangos.yml/badge.svg)](https://github.com/vmangos/core/actions/workflows/vmangos.yml)
+![VMRepack Logo](https://github.com/cbunting99/vMangos-Repack/vmrepack.png)
 
+# Vanilla MaNGOS Repack
+This is a repack of the VMaNGOS core, which is an independent continuation of the Elysium / LightsHope 
+codebases, focused on delivering the most complete and accurate content progression system possible, 
+including support for the patch appropriate game clients.
 
-# Progressive Vanilla
-This project is an independent continuation of the Elysium / LightsHope codebases, focused on delivering the most complete and accurate content progression system possible, including support for the patch appropriate game clients.
+### Information
+- Date: Updated Daily
+- Platform: Windows
 
-### Currently supported builds
+### Features
+- Anticheat:   Yes
+- Warden:      Yes
+- TBB:         Yes
+- Maps:        Yes
+- Vmaps:       Yes
+- Mmaps:       Yes
+- Playerbots:  Yes
+- Battlebots:  Yes
+- Progression: Yes
+
+### Supported Client Builds
 - 1.12.1.5875+
 - 1.11.2.5464
 - 1.10.2.5302
@@ -12,20 +28,23 @@ This project is an independent continuation of the Elysium / LightsHope codebase
 - 1.8.4.4878
 - 1.7.1.4695
 - 1.6.1.4544
-<!--- 1.5.1.4449
-- 1.4.2.4375
-- 1.3.1.4297
-- 1.2.4.4222-->
 
-### Project guidelines
-- Accuracy: The point of an emulator is to recreate the functionality of that which it is emulating as closely as possible. Therefore any custom behaviour should be behind a config option and off by default.
-- DB Scripting: Content should be separate from the core itself, so hardcoding scripts should be avoided where possible. When database scripting functionality is insufficient, we simply expand it.
-- Full progression: The ultimate goal of this project is to have complete progression starting from patch 1.2 through 1.12. This means every piece of data must be marked with the patch in which it was added or changed to it's current state.
-- Tools are great: Content creation should not require programming knowledge. We hope to eventually provide tools that allow for user-friendly editing of database scripts and content, with all data presented in human-readable form.
+### Repack Download
+- [![Repack Publisher - binupdate](https://github.com/cbunting99/vMangos-Repack/actions/workflows/repacker-afterbinrelease.yml/badge.svg)](https://github.com/cbunting99/vMangos-Repack/releases/tag/repack-latest) Full Repack (MySQL, Maps, Binaries)
 
-### Downloads
-- [![vmangos CI build](https://github.com/vmangos/core/actions/workflows/dev-release.yml/badge.svg)](https://github.com/vmangos/core/releases/tag/latest)  Latest development binary
-- [![vmangos Development DB Dump](https://github.com/vmangos/core/actions/workflows/db_dump.yml/badge.svg)](https://github.com/vmangos/core/releases/tag/db_latest)  mysql5.6 full dump, no update needed.
+### Useful Downloads
+- Wow Client 1.12.1 enUS [Download](https://wowdl.net/client/World-of-Warcraft-1.12.1.5875-enUS) or [Clients for other Languages](https://wowdl.net)
+- Vanilla Fixes Exe [Download](https://github.com/cbunting99/vanillafixes) Fixes stuttering / Lag issues in 1.12.1 Client
+- Repack vBot Addon [Download](https://github.com/cbunting99/vBots) Makes using Playerbots / Battlebots easier. (For Client 1.12.1)
+
+### Instructions to run the server:
+- Run the batch file "Start MySQL.bat"
+- Start the login server "realmd.exe"
+- Start the game server "mangosd.exe"
+
+### To create a new gm account type this:
+- account create accountname password
+- account set gmlevel accountname 6
 
 ### Useful Links
 - [Wiki](https://github.com/vmangos/wiki)
