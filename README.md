@@ -1,4 +1,4 @@
-![VMRepack Logo](https://github.com/cbunting99/vMangos-Repack/vmrepack.png)
+![VMRepack Logo](vmrepack.png)
 
 # Vanilla MaNGOS Repack
 This is a repack of the VMaNGOS core, which is an independent continuation of the Elysium / LightsHope 
