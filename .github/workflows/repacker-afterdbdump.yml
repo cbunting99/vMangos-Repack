@@ -86,6 +86,7 @@ jobs:
         ./mysql.exe -u root -proot characters -e "source ${{github.workspace}}/db_dump/characters.sql"
         cd ${{github.workspace}}/contrib/repack/MaNGOS        
         ./"Stop MySQL.bat"
+        del ${{github.workspace}}/contrib/repack/MaNGOS/mysql5/data/*.pid
     - name: Remove junk dir
       uses: JesseTG/rm@v1.0.2
       with:
