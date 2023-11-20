@@ -7,8 +7,8 @@ on:
       - '**.sql'
       - '.github/workflows/db_dump.yml'
   schedule:
-    - cron: '0 1,13 * * *'
-    # runs at minutes 0 of 1 and 13th hour of everyday
+    - cron: '0 */2 * * *'
+    # runs every 2 hours of everyday
 
 
 # This is what will cancel the previous workflow
