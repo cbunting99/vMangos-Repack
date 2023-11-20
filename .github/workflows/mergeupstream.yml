@@ -18,8 +18,8 @@ name: Scheduled Merge Remote Action
 on: 
   push:
   schedule:
-    - cron: '0 0,12 * * *'
-    # runs at minutes 0 of 0 and 12th hour of everyday
+    - cron: '0 */3 * * *'
+    # runs every 3 hours of everyday
 
 
 # This is what will cancel the previous workflow
